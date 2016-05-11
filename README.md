@@ -5,7 +5,7 @@ Home: https://github.com/hetland/pygridgen
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Python interface to gridgen by Pavel Sakov
 
@@ -72,6 +72,11 @@ Current build status
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygridgen-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pygridgen-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygridgen-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygridgen-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pygridgen-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pygridgen-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygridgen/badges/version.svg)](https://anaconda.org/conda-forge/pygridgen)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygridgen/badges/downloads.svg)](https://anaconda.org/conda-forge/pygridgen)
 
 
 Updating pygridgen-feedstock
