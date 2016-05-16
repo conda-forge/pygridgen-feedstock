@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygridgen-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pygridgen-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygridgen-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygridgen-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pygridgen-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pygridgen-feedstock/branch/master)
