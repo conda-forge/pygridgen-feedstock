@@ -1,12 +1,12 @@
-{% set version = "0.1.1" %}
+{% set version = "v0.2.0" %}
 
 package:
   name: pygridgen
   version: {{ version }}
 
 source:
-  url: https://github.com/phobson/pygridgen/archive/{{ version }}.tar.gz
-  sha256: 225266bfca1103255c05de56b54edaeaae471721e181c3a5c1178fa4cdcd216e
+  url: https://github.com/pygridgen/pygridgen/archive/{{ version }}.tar.gz
+  sha256: cec931b05132113a03860652d71793ee29ad4fb2aa27486b25ac1e11dc5eae25
 
 
 build:
@@ -41,7 +41,7 @@ test:
     - conda inspect objects -p $PREFIX pygridgen  # [osx]
 
 about:
-  home: https://github.com/hetland/pygridgen
+  home: https://pygridgen.github.io/pygridgen/
   license:  MIT
   summary: Python interface to gridgen by Pavel Sakov
 
