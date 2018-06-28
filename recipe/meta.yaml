@@ -17,13 +17,13 @@ build:
 requirements:
   build:
     - python
+    - pip
     - numpy 1.11.*
     - toolchain
   run:
     - python
     - numpy >=1.11
     - gridgen
-    - pandas
     - matplotlib
     - pyproj
 
