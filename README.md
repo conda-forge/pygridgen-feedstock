@@ -1,7 +1,7 @@
 About pygridgen
 ===============
 
-Home: https://github.com/hetland/pygridgen
+Home: https://pygridgen.github.io/pygridgen/
 
 Package license: MIT
 
@@ -14,14 +14,16 @@ Summary: Python interface to gridgen by Pavel Sakov
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygridgen-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pygridgen-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygridgen-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygridgen-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pygridgen-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pygridgen-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pygridgen-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pygridgen-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygridgen/badges/version.svg)](https://anaconda.org/conda-forge/pygridgen)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygridgen/badges/downloads.svg)](https://anaconda.org/conda-forge/pygridgen)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pygridgen-green.svg)](https://anaconda.org/conda-forge/pygridgen) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pygridgen.svg)](https://anaconda.org/conda-forge/pygridgen) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pygridgen.svg)](https://anaconda.org/conda-forge/pygridgen) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pygridgen.svg)](https://anaconda.org/conda-forge/pygridgen) |
 
 Installing pygridgen
 ====================
