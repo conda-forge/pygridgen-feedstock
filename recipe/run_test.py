@@ -5,6 +5,6 @@ y = [0, 0, 1, 2, 2]
 beta = [1, 1, 0, 1, 1]
 
 focus = pygridgen.grid.Focus()
-focus.add_focus(0.5, 'x', factor=3, Rx=0.2)
-focus.add_focus(0.75, 'y', factor=5, Ry=0.1)
+focus.add_focus(0.5, 'x', factor=3, extent=0.2)
+focus.add_focus(0.75, 'y', factor=5, extent=0.1)
 grid = pygridgen.grid.Gridgen(x, y, beta, shape=(20, 20), focus=focus)
