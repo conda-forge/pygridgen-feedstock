@@ -18,11 +18,11 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
+    - python >=3.5
     - pip
     - numpy
   run:
-    - python
+    - python >=3.5
     - {{ pin_compatible('numpy') }}
     - gridgen
     - matplotlib
