@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: pygridgen
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/pygridgen/pygridgen/archive/v{{ version }}.tar.gz
-  sha256: cec931b05132113a03860652d71793ee29ad4fb2aa27486b25ac1e11dc5eae25
+  sha256: f6cb3d1b8228d38ed215015244f4e1b7e0bef15e9eda33ed8417d5c71c0e24be
 
 
 build:
-  number: 1001
+  number: 0
   skip: True  # [win]
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -18,11 +18,11 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
+    - python >=3.5
     - pip
     - numpy
   run:
-    - python
+    - python >=3.5
     - {{ pin_compatible('numpy') }}
     - gridgen
     - matplotlib
@@ -38,7 +38,7 @@ test:
     - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
-  home: https://pygridgen.github.io/pygridgen/
+  home: https://pygridgen.readthedocs.io/
   license:  MIT
   summary: Python interface to gridgen by Pavel Sakov
 
