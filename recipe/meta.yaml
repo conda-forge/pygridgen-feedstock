@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win or py<35]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -25,7 +25,7 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - gridgen
-    - matplotlib
+    - matplotlib-base
     - pyproj
 
 test:
