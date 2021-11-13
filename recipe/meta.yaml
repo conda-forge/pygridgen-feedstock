@@ -10,7 +10,7 @@ source:
 
 
 build:
-  number: 4
+  number: 5
   skip: True  # [win or py<35]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
