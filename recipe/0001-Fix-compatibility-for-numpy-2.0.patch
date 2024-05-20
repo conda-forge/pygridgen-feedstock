@@ -1,0 +1,40 @@
+From 03e7dc4f9551ceb82fa705e6510f7aa5ca1cacc7 Mon Sep 17 00:00:00 2001
+From: Filipe Fernandes <ocefpaf@gmail.com>
+Date: Mon, 20 May 2024 16:33:31 +0200
+Subject: [PATCH] Fix compatibility for numpy 2.0
+
+---
+ pygridgen/grid.py | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/pygridgen/grid.py b/pygridgen/grid.py
+index c4eb918..c7af042 100644
+--- a/pygridgen/grid.py
++++ b/pygridgen/grid.py
+@@ -2,6 +2,7 @@
+ import os
+ import sys
+ import ctypes
++import warnings
+ 
+ import numpy
+ from matplotlib.path import Path
+@@ -549,11 +550,14 @@ class CGrid(object):
+         angles = numpy.mean(_angles, axis=0) - (numpy.pi / 2)
+         return angles
+ 
+-    @numpy.deprecate(new_name='orthogonality')
+     def calculate_orthogonality(self):
+         """
+         Should deprecate in favor of property ``orthogonality``
+         """
++        warnings.warn(
++            "Use orthogonality instead of calculate_orthogonality.",
++            DeprecationWarning,
++            )
+         return self.orthogonality
+ 
+     def mask_polygon(self, polyverts, mask_value=False):
+-- 
+2.34.1
+
