@@ -14,7 +14,7 @@ source:
 build:
   number: 10
   skip: True  # [win or py<35]
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
 
 requirements:
   build:
@@ -22,6 +22,7 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - python
+    - setuptools
     - pip
     - numpy
   run:
