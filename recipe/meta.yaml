@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: pygridgen
@@ -6,15 +6,12 @@ package:
 
 source:
   url: https://github.com/pygridgen/pygridgen/archive/v{{ version }}.tar.gz
-  sha256: f6cb3d1b8228d38ed215015244f4e1b7e0bef15e9eda33ed8417d5c71c0e24be
-  patches:
-    - 0001-Fix-compatibility-for-numpy-2.0.patch
-
+  sha256: a38903708ec673ae3dc0b13cb8631ae57c7877a28967f803976a758a96b491fb
 
 build:
-  number: 10
+  number: 0
   skip: True  # [win or py<35]
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
