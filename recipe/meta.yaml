@@ -19,7 +19,7 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - python
-    - setuptools
+    - setuptools <=80
     - pip
     - numpy
   run:
