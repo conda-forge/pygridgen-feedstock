@@ -1,0 +1,59 @@
+schema_version: 1
+
+context:
+  version: "0.3.0"
+
+package:
+  name: pygridgen
+  version: ${{ version }}
+
+source:
+  url: https://github.com/pygridgen/pygridgen/archive/v${{ version }}.tar.gz
+  sha256: a38903708ec673ae3dc0b13cb8631ae57c7877a28967f803976a758a96b491fb
+
+build:
+  number: 2
+  skip: win
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  build:
+    - if: build_platform != target_platform
+      then:
+        - python ${{ python_min }}.*
+        - cross-python_${{ target_platform }}
+    - ${{ compiler("c") }}
+    - ${{ stdlib("c") }}
+  host:
+    - python
+    - pip
+    - numpy
+    - setuptools <80
+  run:
+    - python
+    - gridgen
+    - matplotlib-base
+    - pyproj
+    # Needs pkg_resources.
+    - setuptools <80
+
+tests:
+  - python:
+      imports: pygridgen
+      pip_check: true
+  - requirements:
+      run:
+        - pytest
+    script:
+      - pytest --pyargs pygridgen
+
+about:
+  homepage: https://pygridgen.readthedocs.io/
+  license:  MIT
+  license_file: LICENSE.txt
+  summary: Python interface to gridgen by Pavel Sakov
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
+    - phobson
