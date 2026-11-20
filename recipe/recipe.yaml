@@ -14,7 +14,7 @@ source:
 build:
   number: 2
   skip: win
-  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
