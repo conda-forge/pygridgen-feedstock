@@ -24,11 +24,13 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - numpy
     - setuptools <80
   run:
     - python >=${{ python_min }}
+    - numpy
     - gridgen
+    # pygridgen.csa loads libcsa directly.
+    - csa
     - matplotlib-base
     - pyproj
     # Needs pkg_resources.
