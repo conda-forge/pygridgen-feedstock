@@ -10,6 +10,10 @@ package:
 source:
   url: https://github.com/pygridgen/pygridgen/archive/v${{ version }}.tar.gz
   sha256: a38903708ec673ae3dc0b13cb8631ae57c7877a28967f803976a758a96b491fb
+  patches:
+    # Upstream only looks for libgridgen and libcsa in <prefix>/lib, but conda
+    # installs Windows DLLs into <prefix>/Library/bin (e.g. csa.dll).
+    - patches/find-windows-dlls.patch
 
 build:
   number: 3
